@@ -2,12 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Card Validation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>¡Ya casi tienes tu canasta!</header>
+    <main>
+      <div class="datosTarjeta" id="datosTarjeta">
+        <input class="nombre" id="nombre" name="nombreTarjetahabiente" placeholder="Nombre del tarjetahabiente"><br>
+        <input type="number" min=0 oninput="validity.valid||(value='');" onkeypress="soloNumeros(event)" onkeypress="mascaraTarjeta(event)" class="numeroTarjeta" name="numeroTarjeta" id="numeroTarjeta" placeholder="Número de tarjeta"><br>
+        <input type="number" min=0 oninput="validity.valid||(value='');" onkeypress="soloNumeros(event)" class="mesVencimiento" name="mesVencimiento" id="mesVencimiento" placeholder="Mes">
+        <input type="number" min=0 oninput="validity.valid||(value='');" onkeypress="soloNumeros(event)" class="anoVencimiento" name="anoVencimiento" id="anoVencimiento" placeholder="Año">
+        <input class="cvc" name="cvc" placeholder="CVC">
+      </div>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
