@@ -1,0 +1,59 @@
+header {
+    font-family: 'Inconsolata', monospace; font-weight:600;
+    font-size: 64pt;
+    text-align: center;
+    color: #EDFEAD;
+    background-color: #4F323B;
+    border-start-start-radius: 10pt;
+    border-start-end-radius: 10pt;
+}
+.cuerpo{
+    align-items: center;
+    background-color: rgba(204, 228, 114, 1);
+    text-align: center;
+}
+main {
+    font-family: 'Inconsolata', monospace; font-weight:200;  
+    font-size: 36pt; 
+    background-color: #cce472;
+    border-end-start-radius: 10pt;
+    border-end-end-radius: 10pt;
+    height: 500pt;
+
+}
+.productos {
+    background-color: rgba(245, 245, 220, .6);
+    width: 50%;
+    height: 300pt;
+    border-radius: 10pt;
+    font-size: 25pt;
+}
+.lista{
+    background-color: rgba(245, 245, 220, .5);
+    font-size: 16pt;
+    height: 250pt;
+}
+
+.costo{
+    margin-left: 43.5%;
+    margin-top: 20%;
+}
+.cantidad{
+    font-weight: 500;
+}
+
+img{
+    height: 100pt;
+    width: 150pt;
+}
+.tarjeta {
+    float: center;
+    height: 150pt;
+    width: 300pt;
+    background-color: #f5f5dc;
+    opacity: 60%;
+    margin-inline-start: 10%;
+    margin-top: 0%;
+    border-radius: 10pt;
+    font-size: 18pt;
+}

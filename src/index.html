@@ -3,18 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Card Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>¡Ya casi tienes tu canasta!</header>
+    <header>Verdeo</header>
     <main>
-      <div class="datosTarjeta" id="datosTarjeta">
-        <input class="nombre" id="nombre" name="nombreTarjetahabiente" placeholder="Nombre del tarjetahabiente"><br>
-        <input type="number" min=0 oninput="validity.valid||(value='');" onkeypress="soloNumeros(event)" onkeypress="mascaraTarjeta(event)" class="numeroTarjeta" name="numeroTarjeta" id="numeroTarjeta" placeholder="Número de tarjeta"><br>
-        <input type="number" min=0 oninput="validity.valid||(value='');" onkeypress="soloNumeros(event)" class="mesVencimiento" name="mesVencimiento" id="mesVencimiento" placeholder="Mes">
-        <input type="number" min=0 oninput="validity.valid||(value='');" onkeypress="soloNumeros(event)" class="anoVencimiento" name="anoVencimiento" id="anoVencimiento" placeholder="Año">
-        <input class="cvc" name="cvc" placeholder="CVC">
+<!--Contenedor de lista de productos-->
+    <div class="cuerpo" id="cuerpo">
+      ¡Ya casi tienes tu canasta!<br>
+      <div class="productos" id="productos">
+        Productos seleccionados:
+        <div class="lista">
+        <img src="pics/canasta.png"> Suscripción mensual hidroponia  <span class="cantidad">x1</span>
+        <div class="costo">Total a pagar: 230 MXN</div>
+        </div>
       </div>
+      
+        <aside>
+        <div class="tarjeta" id="tarjeta">
+        Datos de pago: <br>
+        <input id="nombre" name="nombreTarjetahabiente" placeholder="Nombre del tarjetahabiente"><br>
+        
+        <input name="numeroTarjeta" maxlength="16" id="numeroTarjeta" placeholder="Número de tarjeta"><br>
+        
+        <input name="mmaa" id="mmaa" placeholder="MM/AA">
+        
+        <input name="cvc" maxlength="3" placeholder="CVC">
+      </aside>
+      </div>
+      
+    </div>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
