@@ -1,3 +1,5 @@
+import validator from './validator.js';
+
 const numeroTarjeta = document.getElementById("numeroTarjeta")
 
 //Sólo digitos:
@@ -18,22 +20,20 @@ digitsOnly.value = digitsOnly.value
 //  }
 //})
 
-//Enmascarado:
-//función de enmascarado
-function maskify (cc) {
-  return cc.split('').map((letras, idx) => idx < cc.length - 4 ? '#':letras);
-}
 //implementando la función de enmascarado en cuanto se alcanzan 16 dígitos
 numeroTarjeta.addEventListener('keyup', (e) => {
   let numeroTarjeta = e.target.value;
-  console.log(maskify(numeroTarjeta).join(''));
+  console.log(validator.maskify(numeroTarjeta));
   if (numeroTarjeta.length==16) {
-    document.getElementById("numeroTarjeta").value = maskify(numeroTarjeta).join('')
+    document.getElementById("numeroTarjeta").value = validator.maskify(numeroTarjeta);
   }
 });
 
 //Validar el número de la tarjeta:
 //función de validación:
 function validation () {
-  
+  let reverseStr = function(str) {
+    return [...str]
+  };
+  console.log(reverseStr(numeroTarjeta))
 }
