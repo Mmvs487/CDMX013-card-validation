@@ -13,7 +13,7 @@ header {
     text-align: center;
 }
 main {
-    font-family: 'Inconsolata', monospace; font-weight:200;  
+    font-family: 'Inconsolata', monospace; font-weight:300;  
     font-size: 36pt; 
     background-color: #cce472;
     border-end-start-radius: 10pt;
@@ -26,11 +26,13 @@ main {
     width: 50%;
     height: 300pt;
     border-radius: 10pt;
-    font-size: 25pt;
+    font-size: 25pt; 
+    font-weight: 300;
 }
 .lista{
     background-color: rgba(245, 245, 220, .5);
     font-size: 16pt;
+    font-weight: 300;
     height: 250pt;
 }
 
