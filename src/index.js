@@ -1,6 +1,7 @@
 import validator from './validator.js';
 
 const numeroTarjeta = document.getElementById("numeroTarjeta");
+const boton = document.getElementById("validar")
 //Sólo digitos:
 numeroTarjeta.addEventListener('keyup', digitsOnly)
 function digitsOnly () {
@@ -19,13 +20,15 @@ digitsOnly.value = digitsOnly.value
 //  }
 //})
 //implementando isValid
-numeroTarjeta.addEventListener('keyup', (e) => {
-  let numeroTarjeta = e.target.value;
-  console.log(validator.isValid(numeroTarjeta));
+boton.addEventListener('click', () => {
+  console.log(validator.isValid(numeroTarjeta.value));
+  numeroTarjeta.value = validator.maskify(numeroTarjeta.value);
 });
 
 //implementando la función de enmascarado en cuanto se alcanzan 16 dígitos
-numeroTarjeta.addEventListener('keyup', (e) => {
+/*numeroTarjeta.addEventListener('focus', (e) => {
+  e.target.value = digitos
+  return
   let numeroTarjeta = e.target.value;
   console.log(validator.maskify(numeroTarjeta));
 //  if (numeroTarjeta.length==16) {
@@ -35,6 +38,14 @@ numeroTarjeta.addEventListener('keyup', (e) => {
     document.getElementById("numeroTarjeta").value = validator.maskify(numeroTarjeta);
   }
 });
+numeroTarjeta.addEventListener('keyup',(e)=> {
+  cardInput = e.target.value
+})
+
+numeroTarjeta.addEventListener('blur', (e)=> {
+  digitos = e.target.value
+e.target.value = validator.maskify(cardInput)
+})
 
 //Validar el número de la tarjeta:
 //función de validación:
@@ -44,4 +55,4 @@ numeroTarjeta.addEventListener('keyup', (e) => {
 //    return [...str]
 //  };
 //}
-//console.log(validator.isValid(numeroTarjeta))
+//console.log(validator.isValid(numeroTarjeta))*/
