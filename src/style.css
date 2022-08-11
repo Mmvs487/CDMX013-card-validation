@@ -8,11 +8,12 @@ header {
     border-start-end-radius: 10pt;
 }
 .cuerpo{
-    align-items: center;
+    float: center;
     background-color: rgba(204, 228, 114, 1);
     text-align: center;
 }
 main {
+    align-items: center;
     font-family: 'Inconsolata', monospace; font-weight:300;  
     font-size: 36pt; 
     background-color: #cce472;
@@ -22,6 +23,8 @@ main {
 
 }
 .productos {
+    margin-left: 30pt;
+    align-items: center;
     background-color: rgba(245, 245, 220, .6);
     width: 50%;
     height: 300pt;
@@ -30,6 +33,7 @@ main {
     font-weight: 300;
 }
 .lista{
+    align-items: center;
     background-color: rgba(245, 245, 220, .5);
     font-size: 16pt;
     font-weight: 300;
@@ -44,17 +48,25 @@ main {
     font-weight: 500;
 }
 
-img{
+.canasta{
     height: 100pt;
     width: 150pt;
 }
+
+.tomates{
+float: right;
+margin-top: 40pt;
+margin-right: 25pt;
+opacity: 90%;
+border-radius: 5%;
+}
+
 .tarjeta {
-    float: center;
     height: 150pt;
     width: 300pt;
     background-color: #f5f5dc;
     opacity: 60%;
-    margin-inline-start: 10%;
+    margin-inline-start: 15%;
     margin-top: 0%;
     border-radius: 10pt;
     font-size: 18pt;

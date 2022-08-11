@@ -28,9 +28,11 @@ const validator = {
                 console.log(totalSum%10===0)
         
                 if (totalSum%10===0) { 
+                    alert ("Tarjeta válida");
                     return true;
                     }else {
-                    return false;
+                    alert ("Número de tarjeta no válido, verifícalo e intenta de nuevo.");
+                    return false;                    
                 }
         }
         }
