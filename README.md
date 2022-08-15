@@ -5,7 +5,7 @@ Los principales usuarios, por ende, son personas que muy probablemente ocupen un
 
 Prototipo final:
 
-![](pics/final.jpg)
+![]([pics/final.jpg](https://github.com/Mmvs487/CDMX013-card-validation/blob/main/src/pics/final.jpg))
 
 
 * La imagen final de tu proyecto.
